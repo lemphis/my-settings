@@ -1,0 +1,33 @@
+[
+    {
+      "key": "cmd+backspace",
+      "command": "workbench.action.terminal.kill",
+      "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "cmd+q",
+      "command": "-workbench.action.quit"
+    },
+    {
+      "key": "shift+cmd+l",
+      "command": "sqltoolsViewBookmarksExplorer.focus"
+    },
+    {
+      "key": "cmd+n",
+      "command": "explorer.newFile",
+      "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+    {
+      "key": "cmd+f",
+      "command": "explorer.newFolder",
+      "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+    {
+      "key": "shift+cmd+9",
+      "command": "workbench.view.extension.dockerView"
+    },
+    {
+      "key": "shift+cmd+0",
+      "command": "workbench.view.extension.kubernetesView"
+    }
+  ]
