@@ -18,12 +18,14 @@ brew install --cask \
     intellij-idea
 
 brew install \
+    typescript \
     kotlin \
     zsh-autosuggestions \
     zsh-fast-syntax-highlighting
     maven \
     gradle \
-    nvm
+    nvm \
+    gh
 
 mkdir ~/.nvm
 
