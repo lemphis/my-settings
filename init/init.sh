@@ -2,7 +2,7 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jaehojang/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$(whoami)/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -25,7 +25,8 @@ brew install \
     maven \
     gradle \
     nvm \
-    gh
+    gh \
+    httpie
 
 mkdir ~/.nvm
 
@@ -36,7 +37,7 @@ mkdir ~/.nvm
 # [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
 # [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
-# 입력 후 아래 command 실행
-# source ~/.zshrc
+# 입력 후 아래 command 실행 (shell session reload)
+exec zsh
 
 # nvm install --lts
