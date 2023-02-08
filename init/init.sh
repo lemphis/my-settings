@@ -7,21 +7,19 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-brew tap homebrew/cask-versions
-
 brew install --cask \
-    temurin \
     google-chrome \
     iterm2 \
     slack \
-    visual-studio-code \
-    intellij-idea
+    discord \
+    docker \
+    rectangle
 
 brew install \
     typescript \
     kotlin \
     zsh-autosuggestions \
-    zsh-fast-syntax-highlighting
+    zsh-fast-syntax-highlighting \
     maven \
     gradle \
     nvm \
