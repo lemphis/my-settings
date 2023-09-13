@@ -9,7 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install --cask \
     google-chrome \
-    iterm2 \
+    alacritty \
     slack \
     discord \
     docker \
@@ -27,6 +27,10 @@ brew install \
     httpie
 
 mkdir ~/.nvm
+
+# alacritty 설정 필요 시 아래 커맨드 실행, 생성된 alacritty.yml 파일에 https://github.com/alacritty/alacritty 참고하여 설정
+# mkdir -p ~/.config/alacritty
+# touch ~/.config/alacritty/alacritty.yml
 
 # ~/.zshrc에 아래 구문 입력
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
