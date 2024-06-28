@@ -25,14 +25,18 @@ brew install \
     gradle \
     nvm \
     gh \
-    httpie
+    httpie \
+    awscli
 
 mkdir ~/.nvm
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-brew upgrade && brew cleanup && omz update && rustup update
+brew upgrade
+brew cleanup
+omz update
+rustup update
 
 # alacritty 설정 필요 시 아래 커맨드 실행, 생성된 alacritty.yml 파일에 https://github.com/alacritty/alacritty 참고하여 설정
 # mkdir -p ~/.config/alacritty
