@@ -26,7 +26,8 @@ brew install \
     nvm \
     gh \
     httpie \
-    awscli
+    awscli \
+    wrk
 
 mkdir ~/.nvm
 
