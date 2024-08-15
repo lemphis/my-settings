@@ -28,7 +28,8 @@ brew install \
     httpie \
     awscli \
     wrk \
-    prettier
+    prettier \
+    rbenv
 
 mkdir ~/.nvm
 
